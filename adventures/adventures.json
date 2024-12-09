@@ -1,0 +1,57 @@
+{
+    "settings": {
+        "pages": [
+            {
+                "title": "Adventures",
+                "capability": "manage_options",
+                "slug": "adv"
+            }
+        ],
+        "sections": [
+            {
+                "id": "portal_base",
+                "title": "Base configuration",
+                "description": "Lorem 1, ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla in officiis. Laborum quisquam illo eaque, deserunt facere mollitia sint doloremque maiores, obcaecati reiciendis voluptate itaque iure fugiat quia architecto!",
+                "view": "section"
+            },
+            {
+                "id": "portal_appearance",
+                "title": "Appearance",
+                "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla in officiis. Laborum quisquam illo eaque, deserunt facere mollitia sint doloremque maiores, obcaecati reiciendis voluptate itaque iure fugiat quia architecto!",
+                "view": "section"
+            }
+        ],
+        "fields": [
+            {
+                "id": "adv_portal_key",
+                "title": "Portal Key",
+                "section": "portal_base",
+                "type": "text",
+                "placeholder": "Enter your portal key",
+                "view": "field.text"
+            },
+            {
+                "id": "adv_api_host",
+                "title": "Host API",
+                "section": "portal_base",
+                "type": "text",
+                "placeholder": "Enter API host",
+                "default": "https://api.mortenhartvig.dk",
+                "view": "field.text"
+            },
+            {
+                "id": "adv_portal_theme",
+                "title": "Theme",
+                "section": "portal_appearance",
+                "type": "select",
+                "options": {
+                    "rounded.v1": "Round (V1)",
+                    "squared.v1": "Square (V1)",
+                    "standard": "Standard"
+                },
+                "default": "standard",
+                "view": "field.select"
+            }
+        ]
+    }
+}
